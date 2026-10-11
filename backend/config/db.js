@@ -12,7 +12,7 @@ const connectDB = async () => {
   }
 
   if (!connectionPromise) {
-    connectionPromise = mongoose.connect(process.env.MONGODB_URI)
+    connectionPromise = mongoose.connect(process.env.MONGODB_URI, { serverSelectionTimeoutMS: 5000 })
       .then((conn) => {
         console.log(`MongoDB Connected: ${conn.connection.host}`);
         connectionPromise = undefined;
