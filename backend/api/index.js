@@ -1,13 +1,11 @@
-const serverless = require('serverless-http');
 const app = require('../server');
 const connectDB = require('../config/db');
-const handler = serverless(app);
 
 module.exports = async (req, res) => {
 	const pathname = new URL(req.url, 'http://localhost').pathname;
 
 	if (req.method === 'GET' && (pathname === '/' || pathname === '/health')) {
-		return handler(req, res);
+		return app(req, res);
 	}
 
 	try {
@@ -20,5 +18,5 @@ module.exports = async (req, res) => {
 		return;
 	}
 
-	return handler(req, res);
+	return app(req, res);
 };
