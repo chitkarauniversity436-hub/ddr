@@ -14,7 +14,7 @@ const Login = () => {
     try {
       await login(email, password);
     } catch (err) {
-      setError('Invalid email or password');
+      setError(err.response?.data?.message || 'Unable to reach the server. Please try again.');
     }
   };
 
