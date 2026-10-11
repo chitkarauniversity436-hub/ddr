@@ -11,8 +11,6 @@ if (!process.env.JWT_SECRET) {
   throw new Error('JWT_SECRET is missing. Add it to your .env file before starting the server.');
 }
 
-connectDB();
-
 const app = express();
 app.set('trust proxy', 1);
 
@@ -86,7 +84,12 @@ app.use(errorHandler);
 
 if (process.env.NODE_ENV !== 'production' && require.main === module) {
   const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  connectDB()
+    .then(() => app.listen(PORT, () => console.log(`Server running on port ${PORT}`)))
+    .catch((error) => {
+      console.error(`MongoDB connection failed: ${error.message}`);
+      process.exitCode = 1;
+    });
 }
 
 module.exports = app;
