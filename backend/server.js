@@ -57,6 +57,15 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
 }));
+app.use('/api', async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    res.status(503);
+    next(error);
+  }
+});
 app.use(helmet({
   crossOriginResourcePolicy: false,
 }));
