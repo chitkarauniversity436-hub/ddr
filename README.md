@@ -54,21 +54,6 @@ A full-stack, responsive web application for conducting online quizzes for the D
    npm run start
    ```
    - Frontend will run on `http://localhost:5173`
-   - Backend will run on `http://localhost:5000`
-4. **Run the Application**
-   Start both frontend and backend servers simultaneously:
-   ```bash
-   npm run start
-   ```
-   - Frontend will run on `http://localhost:5173`
-   - Backend will run on `http://localhost:5000`
-  
-   - ## Default Admin Credentials
-If you seeded the database using default values:
-- Email: `admin@drrclub.edu`
-- Password: `adminpassword`
 
-## License
-MIT
 
 
