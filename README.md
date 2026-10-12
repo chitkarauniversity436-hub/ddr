@@ -2,7 +2,8 @@
 
 A full-stack, responsive web application for conducting online quizzes for the Disaster Risk Reduction Club.
 
-
+## Tech Stack
+- **Frontend**: React (Vite), Tailwind CSS, Lucide React
 - **Backend**: Node.js, Express, MongoDB, Mongoose, JWT, bcrypt
 - **Design**: Modern glassmorphism, dark navy theme with cyan and orange accents.
 
