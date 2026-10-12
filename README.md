@@ -20,9 +20,7 @@ A full-stack, responsive web application for conducting online quizzes for the D
   - Dashboard to manage quizzes.
   - Ability to publish/hide results.
   - 
-## Prerequisites
-- Node.js (v16 or higher)
-- MongoDB running locally on port 27017 or a MongoDB Atlas URI.
+
 
 ## Setup Instructions
 
