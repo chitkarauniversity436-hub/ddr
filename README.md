@@ -7,17 +7,7 @@ A full-stack, responsive web application for conducting online quizzes for the D
 - **Backend**: Node.js, Express, MongoDB, Mongoose, JWT, bcrypt
 - **Design**: Modern glassmorphism, dark navy theme with cyan and orange accents.
 
-## Features
-- **Student Portal**:
-  - Secure registration (unique Gmail and quiz combination).
-  - Countdown timer for upcoming quizzes.
-  - Per-question countdown timers with auto-submit.
-  - Automatic scoring with speed bonuses.
-  - Dynamic competition leaderboard.
-- **Admin Portal**:
-  - Secure login with JWT.
-  - Dashboard to manage quizzes.
-  - Ability to publish/hide results.
+
 
 ## Prerequisites
 - Node.js (v16 or higher)
