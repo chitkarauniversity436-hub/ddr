@@ -60,6 +60,12 @@ If you seeded the database using default values:
 - Email: `admin@drrclub.edu`
 - Password: `adminpassword`
 
+## Default Admin Credentials
+If you seeded the database using default values:
+- Email: `admin@drrclub.edu`
+- Password: `adminpassword`
 
+## License
+MIT
 
 
